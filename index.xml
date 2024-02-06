@@ -349,7 +349,7 @@ data.head()
 
 
 
-&lt;div id=&#34;chart-675983124&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-461983752&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -359,7 +359,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-675983124&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-461983752&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -844,6 +844,14 @@ $$&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;Add the publication&amp;rsquo;s &lt;strong&gt;full text&lt;/strong&gt; or &lt;strong&gt;supplementary notes&lt;/strong&gt; here. You can use rich formatting such as including &lt;a href=&#34;https://docs.hugoblox.com/content/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code, math, and images&lt;/a&gt;.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>地震学夏の学校 2024</title>
+      <link>https://is-enaga.github.io/talk/%E5%9C%B0%E9%9C%87%E5%AD%A6%E5%A4%8F%E3%81%AE%E5%AD%A6%E6%A0%A1-2024/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://is-enaga.github.io/talk/%E5%9C%B0%E9%9C%87%E5%AD%A6%E5%A4%8F%E3%81%AE%E5%AD%A6%E6%A0%A1-2024/</guid>
+      <description></description>
     </item>
     
   </channel>
