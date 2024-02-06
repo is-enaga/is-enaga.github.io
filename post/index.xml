@@ -5,12 +5,72 @@
     <link>https://is-enaga.github.io/post/</link>
       <atom:link href="https://is-enaga.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <description>投稿</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>ja</language>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>ja</language><lastBuildDate>Tue, 06 Feb 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://is-enaga.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>投稿</title>
       <link>https://is-enaga.github.io/post/</link>
     </image>
+    
+    <item>
+      <title>東大アーチ散策</title>
+      <link>https://is-enaga.github.io/post/todai_arch/</link>
+      <pubDate>Tue, 06 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://is-enaga.github.io/post/todai_arch/</guid>
+      <description>&lt;h1 id=&#34;図書館周辺&#34;&gt;図書館周辺&lt;/h1&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;gallery-grid&#34;&gt;
+
+  
+  
+  
+    
+    
+    
+    
+    
+  
+  
+  &lt;div class=&#34;gallery-item gallery-item--medium&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery-arch&#34; href=&#34;https://is-enaga.github.io/media/albums/arch/lib_meiji.jpg&#34; &gt;
+      &lt;img src=&#34;https://is-enaga.github.io/media/albums/arch/lib_meiji_hu8b27b6170921bf4c73383f42fe555307_4719372_750x750_fit_q75_h2_lanczos.webp&#34; loading=&#34;lazy&#34; alt=&#34;lib_meiji.jpg&#34; width=&#34;563&#34; height=&#34;750&#34;&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  
+    
+    
+    
+    
+    
+  
+  
+  &lt;div class=&#34;gallery-item gallery-item--medium&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery-arch&#34; href=&#34;https://is-enaga.github.io/media/albums/arch/lib_south.jpg&#34; &gt;
+      &lt;img src=&#34;https://is-enaga.github.io/media/albums/arch/lib_south_hu7c590e21f292ffcc3f99b7a2b6f67465_4140923_750x750_fit_q75_h2_lanczos.webp&#34; loading=&#34;lazy&#34; alt=&#34;lib_south.jpg&#34; width=&#34;750&#34; height=&#34;563&#34;&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  
+
+&lt;/div&gt;
+
+</description>
+    </item>
     
   </channel>
 </rss>

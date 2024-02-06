@@ -2,10 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://is-enaga.github.io/</loc>
-    <lastmod>2024-05-26T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
     <loc>https://is-enaga.github.io/categories/</loc>
     <lastmod>2024-05-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -30,6 +26,26 @@
     <lastmod>2024-05-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
+    <loc>https://is-enaga.github.io/</loc>
+    <lastmod>2024-02-06T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://is-enaga.github.io/tag/academic/</loc>
+    <lastmod>2024-02-06T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://is-enaga.github.io/category/%E6%95%A3%E7%AD%96/</loc>
+    <lastmod>2024-02-06T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://is-enaga.github.io/post/</loc>
+    <lastmod>2024-02-06T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://is-enaga.github.io/post/todai_arch/</loc>
+    <lastmod>2024-02-06T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://is-enaga.github.io/_post/blog-with-jupyter/</loc>
     <lastmod>2023-11-04T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -48,10 +64,6 @@
   </url><url>
     <loc>https://is-enaga.github.io/__index/</loc>
     <lastmod>2022-10-24T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://is-enaga.github.io/tag/academic/</loc>
-    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://is-enaga.github.io/category/demo/</loc>
@@ -102,6 +114,10 @@
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
+    <loc>https://is-enaga.github.io/_privacy/</loc>
+    <lastmod>2018-06-28T00:00:00+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://is-enaga.github.io/tag/deep-learning/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -139,9 +155,6 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://is-enaga.github.io/note/</loc>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://is-enaga.github.io/post/</loc>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
