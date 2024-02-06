@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>学会 | ひびこれトーキョー</title>
+    <link>https://is-enaga.github.io/tag/%E5%AD%A6%E4%BC%9A/</link>
+      <atom:link href="https://is-enaga.github.io/tag/%E5%AD%A6%E4%BC%9A/index.xml" rel="self" type="application/rss+xml" />
+    <description>学会</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>ja</language><lastBuildDate>Sun, 26 May 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://is-enaga.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>学会</title>
+      <link>https://is-enaga.github.io/tag/%E5%AD%A6%E4%BC%9A/</link>
+    </image>
+    
+    <item>
+      <title>JpGU 2024</title>
+      <link>https://is-enaga.github.io/talk/jpgu-2024/</link>
+      <pubDate>Sun, 26 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://is-enaga.github.io/talk/jpgu-2024/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SSJ 2023</title>
+      <link>https://is-enaga.github.io/talk/ssj-2023/</link>
+      <pubDate>Tue, 31 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://is-enaga.github.io/talk/ssj-2023/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JpGU 2023</title>
+      <link>https://is-enaga.github.io/talk/jpgu-2023/</link>
+      <pubDate>Sun, 21 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://is-enaga.github.io/talk/jpgu-2023/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

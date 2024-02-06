@@ -1,35 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tokyo hibi-korekore</title>
+    <title>ひびこれトーキョー</title>
     <link>https://is-enaga.github.io/</link>
       <atom:link href="https://is-enaga.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <description>Tokyo hibi-korekore</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate>
+    <description>ひびこれトーキョー</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>ja</language><lastBuildDate>Sun, 26 May 2024 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://is-enaga.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
-      <title>Tokyo hibi-korekore</title>
+      <url>https://is-enaga.github.io/featured.jpg</url>
+      <title>ひびこれトーキョー</title>
       <link>https://is-enaga.github.io/</link>
     </image>
     
     <item>
-      <title>Example Talk</title>
-      <link>https://is-enaga.github.io/talk/example-talk/</link>
-      <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
-      <guid>https://is-enaga.github.io/talk/example-talk/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Slides can be added in a few ways:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Create&lt;/strong&gt; slides using Hugo Blox Builder&amp;rsquo;s &lt;a href=&#34;https://docs.hugoblox.com/reference/content-types/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Slides&lt;/em&gt;&lt;/a&gt; feature and link using &lt;code&gt;slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Upload&lt;/strong&gt; an existing slide deck to &lt;code&gt;static/&lt;/code&gt; and link using &lt;code&gt;url_slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Embed&lt;/strong&gt; your slides (e.g. Google Slides) or presentation video on this page using &lt;a href=&#34;https://docs.hugoblox.com/reference/markdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;shortcodes&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Further event details, including &lt;a href=&#34;https://docs.hugoblox.com/reference/markdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;page elements&lt;/a&gt; such as image galleries, can be added to the body of this page.&lt;/p&gt;
-</description>
+      <title>JpGU 2024</title>
+      <link>https://is-enaga.github.io/talk/jpgu-2024/</link>
+      <pubDate>Sun, 26 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://is-enaga.github.io/talk/jpgu-2024/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -77,6 +65,30 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;academic import &lt;span class=&#34;s1&#34;&gt;&amp;#39;notebooks/**.ipynb&amp;#39;&lt;/span&gt; content/post/ --verbose
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The notebooks will be published to the folder you specify above. In this case, they will be published to your &lt;code&gt;content/post/&lt;/code&gt; folder.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>SSJ 2023</title>
+      <link>https://is-enaga.github.io/talk/ssj-2023/</link>
+      <pubDate>Tue, 31 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://is-enaga.github.io/talk/ssj-2023/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JpGU 2023</title>
+      <link>https://is-enaga.github.io/talk/jpgu-2023/</link>
+      <pubDate>Sun, 21 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://is-enaga.github.io/talk/jpgu-2023/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://is-enaga.github.io/__index/</link>
+      <pubDate>Mon, 24 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://is-enaga.github.io/__index/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -263,7 +275,7 @@ data.head()
 
 
 
-&lt;div id=&#34;chart-914352867&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-642351987&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -273,7 +285,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-914352867&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-642351987&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
