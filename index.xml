@@ -53,8 +53,9 @@ On the other hand, tools to obtain WIN data from other formats are not exixt.&lt
 ただしそのときは，中川茂樹先生のモジュールを合わせて使うことを推奨する．&lt;br&gt;
 WIN data can be read with obspy.
 You are recommended to use modifying code by Nakagawa
-because original obspy code has some errors on reading WIN.&lt;br&gt;&lt;/p&gt;
-&lt;p&gt;PythonでWINデータを生成するモジュールはない．&lt;/p&gt;
+because original obspy code has some bugs on reading WIN data.&lt;br&gt;
+&lt;a href=&#34;https://www.eri.u-tokyo.ac.jp/people/nakagawa/win/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.eri.u-tokyo.ac.jp/people/nakagawa/win/&lt;/a&gt;&lt;/p&gt;
+&lt;!-- PythonでWINデータを生成するモジュールはない． --&gt;
 </description>
     </item>
     
@@ -373,7 +374,7 @@ data.head()
 
 
 
-&lt;div id=&#34;chart-613459278&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-962354871&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -383,7 +384,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-613459278&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-962354871&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
