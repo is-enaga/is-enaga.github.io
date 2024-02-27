@@ -907,13 +907,19 @@ On the other hand, tools to obtain WIN data from other formats are not exixt.</p
 <h1 id="win-format-on-python">WIN format on Python</h1>
 <p>WINデータの読み込みはobspyで可能．
 ただしそのときは，中川茂樹先生のモジュールを合わせて使うことを推奨する．<br>
-PythonでWINデータを生成するモジュールはない．
+反対にPythonでWINデータを生成するモジュールはない．
 現在numpy.arrayの波形データをWINフォーマットに変換するモジュールのベータ版が完成．
 後日配布予定．</p>
 <p>WIN data can be read with obspy.
 You are recommended to use modifying code by Nakagawa
 because original obspy code has some bugs on reading WIN data.<br>
 <a href="https://www.eri.u-tokyo.ac.jp/people/nakagawa/win/" target="_blank" rel="noopener">https://www.eri.u-tokyo.ac.jp/people/nakagawa/win/</a></p>
+<p>変換前後の画像は以下のようになる．
+両端のデータの欠損部は端のデータ値で埋めている．
+Python
+<img src=output.png>
+WIN
+<img src=win_test.png></p>
 
     </div>
 
