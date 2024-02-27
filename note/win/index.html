@@ -318,7 +318,7 @@
 
   
 
-<meta name="description" content="PythonでWINフォーマットを扱いたい!" />
+<meta name="description" content="PythonでWINフォーマットを扱いたい! 近日中にモジュール配布予定．" />
 
 
 
@@ -366,7 +366,7 @@
 <meta property="og:site_name" content="日々散策" />
 <meta property="og:url" content="https://is-enaga.github.io/note/win/" />
 <meta property="og:title" content="WINシステム with Python | 日々散策" />
-<meta property="og:description" content="PythonでWINフォーマットを扱いたい!" /><meta property="og:image" content="https://is-enaga.github.io/note/win/featured.png" /><meta property="og:locale" content="ja" />
+<meta property="og:description" content="PythonでWINフォーマットを扱いたい! 近日中にモジュール配布予定．" /><meta property="og:image" content="https://is-enaga.github.io/note/win/featured.png" /><meta property="og:locale" content="ja" />
 
   
     <meta
@@ -897,22 +897,23 @@
       <h1 id="win-system">WIN system</h1>
 <p>WINシステムは日本で用いられている地震波形の検測用ソフトおよびその周辺ツール．
 ダウンロードは以下から可能．<br>
-WIN system consists of a GUI picking tool and other surrounding commands. You can download WIN from:<br>
 <a href="https://wwweic.eri.u-tokyo.ac.jp/WIN/pub/win/" target="_blank" rel="noopener">https://wwweic.eri.u-tokyo.ac.jp/WIN/pub/win/</a></p>
 <p>WINフォーマットのデータはwintosacやwin2sacでSAC形式に変換可能．
-一方で，他のフォーマットからWINフォーマットに変換するツールはほぼ公開されていないようだ．<br>
-WIN format data can be converted to SAC with wintosac command or win2sac command.
+一方で，他のフォーマットからWINフォーマットに変換するツールはほぼ公開されていないようだ．<br></p>
+<p>WIN system consists of a GUI picking tool and other surrounding commands. You can download WIN from:<br>
+<a href="https://wwweic.eri.u-tokyo.ac.jp/WIN/pub/win/" target="_blank" rel="noopener">https://wwweic.eri.u-tokyo.ac.jp/WIN/pub/win/</a></p>
+<p>WIN format data can be converted to SAC with wintosac command or win2sac command.
 On the other hand, tools to obtain WIN data from other formats are not exixt.</p>
 <h1 id="win-format-on-python">WIN format on Python</h1>
 <p>WINデータの読み込みはobspyで可能．
 ただしそのときは，中川茂樹先生のモジュールを合わせて使うことを推奨する．<br>
-WIN data can be read with obspy.
+PythonでWINデータを生成するモジュールはない．
+現在numpy.arrayの波形データをWINフォーマットに変換するモジュールのベータ版が完成．
+後日配布予定．</p>
+<p>WIN data can be read with obspy.
 You are recommended to use modifying code by Nakagawa
 because original obspy code has some bugs on reading WIN data.<br>
 <a href="https://www.eri.u-tokyo.ac.jp/people/nakagawa/win/" target="_blank" rel="noopener">https://www.eri.u-tokyo.ac.jp/people/nakagawa/win/</a></p>
-<p>PythonでWINデータを生成するモジュールはない．
-現在ベータ版が完成．
-後日配布予定．</p>
 
     </div>
 
