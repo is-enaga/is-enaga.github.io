@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: 2024年2月27日 --><html lang="ja" >
+<!-- Last Published: 2024年3月4日 --><html lang="ja" >
 
 
 <head>
@@ -318,7 +318,7 @@
 
   
 
-<meta name="description" content="PythonでWINフォーマットを扱いたい! 近日中にモジュール配布予定．" />
+<meta name="description" content="PythonでWINフォーマットを出力するモジュールを作成しました．" />
 
 
 
@@ -365,17 +365,17 @@
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="日々散策" />
 <meta property="og:url" content="https://is-enaga.github.io/note/win/" />
-<meta property="og:title" content="WINシステム with Python | 日々散策" />
-<meta property="og:description" content="PythonでWINフォーマットを扱いたい! 近日中にモジュール配布予定．" /><meta property="og:image" content="https://is-enaga.github.io/note/win/featured.png" /><meta property="og:locale" content="ja" />
+<meta property="og:title" content="WINフォーマットファイルをPythonで作る | 日々散策" />
+<meta property="og:description" content="PythonでWINフォーマットを出力するモジュールを作成しました．" /><meta property="og:image" content="https://is-enaga.github.io/note/win/featured.png" /><meta property="og:locale" content="ja" />
 
   
     <meta
       property="article:published_time"
-      content="2024-02-06T00:00:00&#43;00:00"
+      content="2024-02-20T00:00:00&#43;00:00"
     />
   
   
-    <meta property="article:modified_time" content="2024-02-06T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2024-03-04T00:00:00&#43;00:00">
   
 
 
@@ -400,7 +400,7 @@
 
 
   
-  <title>WINシステム with Python | 日々散策</title>
+  <title>WINフォーマットファイルをPythonで作る | 日々散策</title>
 
   
   
@@ -744,7 +744,7 @@
 
 
 <div class="article-container pt-3">
-  <h1>WINシステム with Python</h1>
+  <h1>WINフォーマットファイルをPythonで作る</h1>
 
   
 
@@ -771,8 +771,10 @@
     
     
       
+          最終更新
+      
     
-    2024年2月6日
+    2024年3月4日
   </span>
   
 
@@ -885,7 +887,7 @@
 <div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 714px;">
   <div style="position: relative">
     <img src="/note/win/featured_hudf21e13ae7af485bf8fcdad25cbdb3d5_55730_05698d23f9c6e69568600f80822570c7.webp" width="720" height="714" alt="" class="featured-image">
-    <span class="article-header-caption">WINシステムでサンプルデータを表示した画面</span>
+    <span class="article-header-caption">WINシステムでWINのサンプルデータを表示した画面</span>
   </div>
 </div>
 
@@ -894,7 +896,17 @@
   <div class="article-container">
 
     <div class="article-style">
-      <h1 id="win-system">WIN system</h1>
+      <h1 id="convert-numpy-data-to-win-format">Convert NumPy Data to WIN Format</h1>
+<p>numpyのデータをWINフォーマットに書き出すモジュールのベータ版をGitHubに公開しました．<br>
+<a href="https://github.com/is-enaga/winpy/blob/main/mkwin.py" target="_blank" rel="noopener">https://github.com/is-enaga/winpy/blob/main/mkwin.py</a><br>
+ご自身のプログラムにimportやコピーペーストしてご利用ください．
+mkwin関数の引き数にnumpy.arrayとそのサンプリング周波数，データの開始日時を指定すると，numpy.arrayをWINに変換して出力します．
+ご意見・ご感想等ございましたらTwitterまでご連絡ください．</p>
+<p>A Python module to convert np.array data to WIN format is now uploaded on Github!<br>
+<a href="https://github.com/is-enaga/winpy/blob/main/mkwin.py" target="_blank" rel="noopener">https://github.com/is-enaga/winpy/blob/main/mkwin.py</a><br>
+Please use the &ldquo;mkwin&rdquo; function by providing its arguments: an np.array containing data, the sampling frequency, and the start time of the data.</p>
+<h1 id="補足">補足</h1>
+<h2 id="win-system-by-the-university-of-tokyo">WIN System by The University of Tokyo</h2>
 <p>WINシステムは日本で用いられている地震波形の検測用ソフトおよびその周辺ツール．
 ダウンロードは以下から可能．<br>
 <a href="https://wwweic.eri.u-tokyo.ac.jp/WIN/pub/win/" target="_blank" rel="noopener">https://wwweic.eri.u-tokyo.ac.jp/WIN/pub/win/</a></p>
@@ -903,23 +915,28 @@
 <p>WIN system consists of a GUI picking tool and other surrounding commands. You can download WIN from:<br>
 <a href="https://wwweic.eri.u-tokyo.ac.jp/WIN/pub/win/" target="_blank" rel="noopener">https://wwweic.eri.u-tokyo.ac.jp/WIN/pub/win/</a></p>
 <p>WIN format data can be converted to SAC with wintosac command or win2sac command.
-On the other hand, tools to obtain WIN data from other formats are not exixt.</p>
-<h1 id="win-format-on-python">WIN format on Python</h1>
-<p>WINデータの読み込みはobspyで可能．
-ただしそのときは，中川茂樹先生のモジュールを合わせて使うことを推奨する．<br>
-反対にPythonでWINデータを生成するモジュールはない．
-現在numpy.arrayの波形データをWINフォーマットに変換するモジュールのベータ版が完成．
-後日配布予定．</p>
-<p>WIN data can be read with obspy.
-You are recommended to use modifying code by Nakagawa
+On the other hand, tools to obtain WIN data from other formats are not exist.</p>
+<h2 id="read-win-format-data-with-python">Read WIN Format Data with Python</h2>
+<p>WINデータの読み込みは<a href="https://docs.obspy.org/">obspy</a>で可能．
+ただしそのときは，<a href="https://www.eri.u-tokyo.ac.jp/people/nakagawa/win/">中川茂樹先生のモジュール</a>を合わせて使うことを推奨する．<br></p>
+<!-- 反対にPythonでWINデータを生成するモジュールはない． -->
+<!-- 現在numpy.arrayの波形データをWINフォーマットに変換するモジュールのベータ版が完成．
+後日配布予定． -->
+<p>WIN data can be read with obspy (<a href="https://docs.obspy.org/%29" target="_blank" rel="noopener">https://docs.obspy.org/)</a>.
+Then you are recommended to use modifying patch by Nakagawa
 because original obspy code has some bugs on reading WIN data.<br>
 <a href="https://www.eri.u-tokyo.ac.jp/people/nakagawa/win/" target="_blank" rel="noopener">https://www.eri.u-tokyo.ac.jp/people/nakagawa/win/</a></p>
 <p>変換前後の画像は以下のようになる．
-両端のデータの欠損部は端のデータ値で埋めている．</p>
-<p>Python
-<img src=output.png>
-WIN
-<img src=win_test.png></p>
+両端のデータの欠損部は端のデータ値で埋めている．
+(描画時のミスでPythonの波形の正負が逆になっていました．すみません．)</p>
+<figure>
+  <figcaption>Python</figcaption>
+  <img src=output.png width="50%">
+</figure>
+<figure>
+  <figcaption>WIN</figcaption>
+  <img src=win_test.png width="50%">
+</figure>
 
     </div>
 
@@ -952,7 +969,7 @@ WIN
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fis-enaga.github.io%2Fnote%2Fwin%2F&amp;text=WIN%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0&#43;with&#43;Python" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fis-enaga.github.io%2Fnote%2Fwin%2F&amp;text=WIN%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92Python%E3%81%A7%E4%BD%9C%E3%82%8B" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -969,7 +986,7 @@ WIN
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fis-enaga.github.io%2Fnote%2Fwin%2F&amp;t=WIN%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0&#43;with&#43;Python" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fis-enaga.github.io%2Fnote%2Fwin%2F&amp;t=WIN%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92Python%E3%81%A7%E4%BD%9C%E3%82%8B" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -988,7 +1005,7 @@ WIN
         
       
       <li>
-        <a href="mailto:?subject=WIN%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%20with%20Python&amp;body=https%3A%2F%2Fis-enaga.github.io%2Fnote%2Fwin%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+        <a href="mailto:?subject=WIN%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92Python%E3%81%A7%E4%BD%9C%E3%82%8B&amp;body=https%3A%2F%2Fis-enaga.github.io%2Fnote%2Fwin%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -1005,7 +1022,7 @@ WIN
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fis-enaga.github.io%2Fnote%2Fwin%2F&amp;title=WIN%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0&#43;with&#43;Python" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fis-enaga.github.io%2Fnote%2Fwin%2F&amp;title=WIN%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92Python%E3%81%A7%E4%BD%9C%E3%82%8B" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -1022,7 +1039,7 @@ WIN
       
       
       <li>
-        <a href="whatsapp://send?text=WIN%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0&#43;with&#43;Python%20https%3A%2F%2Fis-enaga.github.io%2Fnote%2Fwin%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+        <a href="whatsapp://send?text=WIN%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92Python%E3%81%A7%E4%BD%9C%E3%82%8B%20https%3A%2F%2Fis-enaga.github.io%2Fnote%2Fwin%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -1039,7 +1056,7 @@ WIN
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fis-enaga.github.io%2Fnote%2Fwin%2F&amp;title=WIN%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0&#43;with&#43;Python" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fis-enaga.github.io%2Fnote%2Fwin%2F&amp;title=WIN%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92Python%E3%81%A7%E4%BD%9C%E3%82%8B" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1168,6 +1185,13 @@ WIN
   
   
 
+
+<p class="powered-by">
+  
+  <a href="/privacy/">プライバシーポリシー　Privacy Policy</a>
+  
+  
+</p>
 
 
 

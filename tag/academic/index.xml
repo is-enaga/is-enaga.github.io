@@ -5,7 +5,7 @@
     <link>https://is-enaga.github.io/tag/academic/</link>
       <atom:link href="https://is-enaga.github.io/tag/academic/index.xml" rel="self" type="application/rss+xml" />
     <description>Academic</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>ja</language><lastBuildDate>Tue, 06 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>ja</language><lastBuildDate>Tue, 20 Feb 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://is-enaga.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Academic</title>
@@ -13,11 +13,21 @@
     </image>
     
     <item>
-      <title>WINシステム with Python</title>
+      <title>WINフォーマットファイルをPythonで作る</title>
       <link>https://is-enaga.github.io/note/win/</link>
-      <pubDate>Tue, 06 Feb 2024 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 20 Feb 2024 00:00:00 +0000</pubDate>
       <guid>https://is-enaga.github.io/note/win/</guid>
-      <description>&lt;h1 id=&#34;win-system&#34;&gt;WIN system&lt;/h1&gt;
+      <description>&lt;h1 id=&#34;convert-numpy-data-to-win-format&#34;&gt;Convert NumPy Data to WIN Format&lt;/h1&gt;
+&lt;p&gt;numpyのデータをWINフォーマットに書き出すモジュールのベータ版をGitHubに公開しました．&lt;br&gt;
+&lt;a href=&#34;https://github.com/is-enaga/winpy/blob/main/mkwin.py&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/is-enaga/winpy/blob/main/mkwin.py&lt;/a&gt;&lt;br&gt;
+ご自身のプログラムにimportやコピーペーストしてご利用ください．
+mkwin関数の引き数にnumpy.arrayとそのサンプリング周波数，データの開始日時を指定すると，numpy.arrayをWINに変換して出力します．
+ご意見・ご感想等ございましたらTwitterまでご連絡ください．&lt;/p&gt;
+&lt;p&gt;A Python module to convert np.array data to WIN format is now uploaded on Github!&lt;br&gt;
+&lt;a href=&#34;https://github.com/is-enaga/winpy/blob/main/mkwin.py&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/is-enaga/winpy/blob/main/mkwin.py&lt;/a&gt;&lt;br&gt;
+Please use the &amp;ldquo;mkwin&amp;rdquo; function by providing its arguments: an np.array containing data, the sampling frequency, and the start time of the data.&lt;/p&gt;
+&lt;h1 id=&#34;補足&#34;&gt;補足&lt;/h1&gt;
+&lt;h2 id=&#34;win-system-by-the-university-of-tokyo&#34;&gt;WIN System by The University of Tokyo&lt;/h2&gt;
 &lt;p&gt;WINシステムは日本で用いられている地震波形の検測用ソフトおよびその周辺ツール．
 ダウンロードは以下から可能．&lt;br&gt;
 &lt;a href=&#34;https://wwweic.eri.u-tokyo.ac.jp/WIN/pub/win/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://wwweic.eri.u-tokyo.ac.jp/WIN/pub/win/&lt;/a&gt;&lt;/p&gt;
@@ -26,23 +36,28 @@
 &lt;p&gt;WIN system consists of a GUI picking tool and other surrounding commands. You can download WIN from:&lt;br&gt;
 &lt;a href=&#34;https://wwweic.eri.u-tokyo.ac.jp/WIN/pub/win/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://wwweic.eri.u-tokyo.ac.jp/WIN/pub/win/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;WIN format data can be converted to SAC with wintosac command or win2sac command.
-On the other hand, tools to obtain WIN data from other formats are not exixt.&lt;/p&gt;
-&lt;h1 id=&#34;win-format-on-python&#34;&gt;WIN format on Python&lt;/h1&gt;
-&lt;p&gt;WINデータの読み込みはobspyで可能．
-ただしそのときは，中川茂樹先生のモジュールを合わせて使うことを推奨する．&lt;br&gt;
-反対にPythonでWINデータを生成するモジュールはない．
-現在numpy.arrayの波形データをWINフォーマットに変換するモジュールのベータ版が完成．
-後日配布予定．&lt;/p&gt;
-&lt;p&gt;WIN data can be read with obspy.
-You are recommended to use modifying code by Nakagawa
+On the other hand, tools to obtain WIN data from other formats are not exist.&lt;/p&gt;
+&lt;h2 id=&#34;read-win-format-data-with-python&#34;&gt;Read WIN Format Data with Python&lt;/h2&gt;
+&lt;p&gt;WINデータの読み込みは&lt;a href=&#34;https://docs.obspy.org/&#34;&gt;obspy&lt;/a&gt;で可能．
+ただしそのときは，&lt;a href=&#34;https://www.eri.u-tokyo.ac.jp/people/nakagawa/win/&#34;&gt;中川茂樹先生のモジュール&lt;/a&gt;を合わせて使うことを推奨する．&lt;br&gt;&lt;/p&gt;
+&lt;!-- 反対にPythonでWINデータを生成するモジュールはない． --&gt;
+&lt;!-- 現在numpy.arrayの波形データをWINフォーマットに変換するモジュールのベータ版が完成．
+後日配布予定． --&gt;
+&lt;p&gt;WIN data can be read with obspy (&lt;a href=&#34;https://docs.obspy.org/%29&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://docs.obspy.org/)&lt;/a&gt;.
+Then you are recommended to use modifying patch by Nakagawa
 because original obspy code has some bugs on reading WIN data.&lt;br&gt;
 &lt;a href=&#34;https://www.eri.u-tokyo.ac.jp/people/nakagawa/win/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.eri.u-tokyo.ac.jp/people/nakagawa/win/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;変換前後の画像は以下のようになる．
-両端のデータの欠損部は端のデータ値で埋めている．&lt;/p&gt;
-&lt;p&gt;Python
-&lt;img src=output.png&gt;
-WIN
-&lt;img src=win_test.png&gt;&lt;/p&gt;
+両端のデータの欠損部は端のデータ値で埋めている．
+(描画時のミスでPythonの波形の正負が逆になっていました．すみません．)&lt;/p&gt;
+&lt;figure&gt;
+  &lt;figcaption&gt;Python&lt;/figcaption&gt;
+  &lt;img src=output.png width=&#34;50%&#34;&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+  &lt;figcaption&gt;WIN&lt;/figcaption&gt;
+  &lt;img src=win_test.png width=&#34;50%&#34;&gt;
+&lt;/figure&gt;
 </description>
     </item>
     
