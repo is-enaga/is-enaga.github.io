@@ -331,8 +331,8 @@
 
 
 
-<link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png" />
-<link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png" />
+<link rel="icon" type="image/png" href="/media/icon_hu77f5ff57258830e6286a001a8437cebf_35124_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_hu77f5ff57258830e6286a001a8437cebf_35124_180x180_fill_lanczos_center_3.png" />
 
 <meta name="theme-color" content="#1565c0" />
 
@@ -431,7 +431,7 @@
   
   
   
-  <script src="/js/wowchemy-init.min.f12b0f9be5c1c3c15047faa204c22a2c.js"></script>
+  <script src="/js/wowchemy-init.min.d66af272089c6c0601f1a57edc3bf6ab.js"></script>
 
   
 
@@ -557,6 +557,34 @@
           
           
           
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link  active" href="/note"><span>ノート</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
             
           
 
@@ -577,34 +605,6 @@
 
           <li class="nav-item">
             <a class="nav-link " href="/event"><span>イベント</span></a>
-          </li>
-
-          
-          
-
-          
-
-          
-          
-          
-
-          
-
-          
-          
-          
-          
-
-          
-            
-              
-              
-            
-            
-          
-
-          <li class="nav-item">
-            <a class="nav-link  active" href="/note"><span>ノート</span></a>
           </li>
 
           
@@ -697,8 +697,15 @@
           
             
             <li class="nav-item d-none d-lg-inline-flex">
-              <a class="nav-link" href="https://twitter.com/winter2enaga" data-toggle="tooltip" data-placement="bottom" title="Follow me on Twitter" target="_blank" rel="noopener" aria-label="Follow me on Twitter">
+              <a class="nav-link" href="https://twitter.com/winter2enaga" data-toggle="tooltip" data-placement="bottom" title="Contact" target="_blank" rel="noopener" aria-label="Contact">
                 <i class="fab fa-twitter" aria-hidden="true"></i>
+              </a>
+            </li>
+          
+            
+            <li class="nav-item d-none d-lg-inline-flex">
+              <a class="nav-link" href="https://twitter.com/winter2enaga" data-toggle="tooltip" data-placement="bottom" title="Contact" target="_blank" rel="noopener" aria-label="Contact">
+                <i class="fab fa-x-twitter" aria-hidden="true"></i>
               </a>
             </li>
           
@@ -714,23 +721,6 @@
 
         
         
-        
-        <li class="nav-item dropdown theme-dropdown">
-          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="表示設定">
-            <i class="fas fa-moon" aria-hidden="true"></i>
-          </a>
-          <div class="dropdown-menu">
-            <a href="#" class="dropdown-item js-set-theme-light">
-              <span>ライト</span>
-            </a>
-            <a href="#" class="dropdown-item js-set-theme-dark">
-              <span>ダーク</span>
-            </a>
-            <a href="#" class="dropdown-item js-set-theme-auto">
-              <span>自動</span>
-            </a>
-          </div>
-        </li>
         
 
         
@@ -883,6 +873,20 @@
   
     
   
+  <a class="btn btn-outline-primary btn-page-header" href="https://github.com/is-enaga/winpy/blob/main/mkwin.py" target="_blank" rel="noopener">
+    <i class="fab fa-github mr-1"></i>download module</a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
   <a class="btn btn-outline-primary btn-page-header" href="https://wwweic.eri.u-tokyo.ac.jp/WIN/Jindex.html" target="_blank" rel="noopener">
     <i class="fas fa-globe mr-1"></i>home page of WIN</a>
 
@@ -898,7 +902,7 @@
     
   
   <a class="btn btn-outline-primary btn-page-header" href="http://wwweic.eri.u-tokyo.ac.jp/WIN/man.en/" target="_blank" rel="noopener">
-    <i class="fas fa-globe mr-1"></i>official manual</a>
+    <i class="fas fa-globe mr-1"></i>WIN manual</a>
 
   
   
@@ -912,7 +916,7 @@
     
   
   <a class="btn btn-outline-primary btn-page-header" href="https://wwweic.eri.u-tokyo.ac.jp/WIN/pub/win/" target="_blank" rel="noopener">
-    <i class="fas fa-globe mr-1"></i>download page</a>
+    <i class="fas fa-globe mr-1"></i>download WIN</a>
 
 
 </div>
@@ -939,43 +943,119 @@
 ご自身のプログラムにimportやコピーペーストしてご利用ください．
 mkwin関数の引き数にnumpy.arrayとそのサンプリング周波数，データの開始日時を指定すると，numpy.arrayをWINに変換して出力します．
 ご意見・ご感想等ございましたらTwitterまでご連絡ください．</p>
+<hr>
 <p>A Python module to convert np.array data to WIN format is now uploaded on Github!<br>
 <a href="https://github.com/is-enaga/winpy/blob/main/mkwin.py" target="_blank" rel="noopener">https://github.com/is-enaga/winpy/blob/main/mkwin.py</a><br>
-Please use the &ldquo;mkwin&rdquo; function by providing its arguments: an np.array containing data, the sampling frequency, and the start time of the data.</p>
+Please use the &ldquo;mkwin&rdquo; function by providing its arguments: an np.array containing data, the sampling frequency, and the start time of the data.
+If you have any comments, please contact me through X (Twitter).</p>
 <h2 id="example">Example</h2>
 <p>正弦波をWINフォーマットに変換した例を以下に示します．<br>
 WINフォーマットは1秒区切りであるため，半端な秒数で開始・終了する場合に欠損部をなんらかの値で埋める必要があります．
 現在はこの欠損部を端のデータ値で埋めるようにしています．
 (描画時のミスでPythonの波形の正負が逆になっていました．すみません．)</p>
-<figure>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-input-numpy">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="Input (numpy)" srcset="
+               /note/win/output_huec5be45977885118c797c81a5c51be8f_20011_84ce07deceb8340fbbf5c513cd8ef91e.webp 400w,
+               /note/win/output_huec5be45977885118c797c81a5c51be8f_20011_47ee45b3b5d871f023667389c8cfbf52.webp 760w,
+               /note/win/output_huec5be45977885118c797c81a5c51be8f_20011_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/note/win/output_huec5be45977885118c797c81a5c51be8f_20011_84ce07deceb8340fbbf5c513cd8ef91e.webp"
+               width="368"
+               height="217"
+               loading="lazy" data-zoomable /></div>
+  </div><figcaption>
+      Input (numpy)
+    </figcaption></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-output-win">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="Output (WIN)" srcset="
+               /note/win/win_test_hu0ec487d3653bc97e07360a115be39359_29673_f4d654aeba8b618551b4fc07c80d83ae.webp 400w,
+               /note/win/win_test_hu0ec487d3653bc97e07360a115be39359_29673_43b17f08dc73bf09d5c5a0af9934d9b6.webp 760w,
+               /note/win/win_test_hu0ec487d3653bc97e07360a115be39359_29673_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/note/win/win_test_hu0ec487d3653bc97e07360a115be39359_29673_f4d654aeba8b618551b4fc07c80d83ae.webp"
+               width="760"
+               height="517"
+               loading="lazy" data-zoomable /></div>
+  </div><figcaption>
+      Output (WIN)
+    </figcaption></figure>
+</p>
+<!-- <figure>
   <figcaption>Python</figcaption>
   <img src=output.png width="50%">
 </figure>
 <figure>
   <figcaption>WIN</figcaption>
   <img src=win_test.png width="50%">
-</figure>
+</figure> -->
 <h1 id="補足">補足</h1>
-<h2 id="win-system-by-the-university-of-tokyo">WIN System by The University of Tokyo</h2>
+<div class="alert alert-note">
+  <div>
+    <h2 id="win-system-by-the-university-of-tokyo">WIN System by The University of Tokyo</h2>
 <p>WINシステムは日本で用いられている地震波形の検測用ソフトおよびその周辺ツール．
 ダウンロードは以下から可能．<br>
 <a href="https://wwweic.eri.u-tokyo.ac.jp/WIN/pub/win/" target="_blank" rel="noopener">https://wwweic.eri.u-tokyo.ac.jp/WIN/pub/win/</a></p>
 <p>WINフォーマットのデータはwintosacやwin2sacでSAC形式に変換可能．
 一方で，他のフォーマットからWINフォーマットに変換するツールはほぼ公開されていないようだ．<br></p>
+<hr>
 <p>WIN system consists of a GUI picking tool and other surrounding commands. You can download WIN from:<br>
 <a href="https://wwweic.eri.u-tokyo.ac.jp/WIN/pub/win/" target="_blank" rel="noopener">https://wwweic.eri.u-tokyo.ac.jp/WIN/pub/win/</a></p>
 <p>WIN format data can be converted to SAC with wintosac command or win2sac command.
 On the other hand, tools to obtain WIN data from other formats are not exist.</p>
-<h2 id="read-win-format-data-with-python">Read WIN Format Data with Python</h2>
+  </div>
+</div>
+<div class="alert alert-note">
+  <div>
+    <h2 id="read-win-format-data-with-python">Read WIN Format Data with Python</h2>
 <p>WINデータの読み込みは<a href="https://docs.obspy.org/">obspy</a>で可能．
 ただしそのときは，<a href="https://www.eri.u-tokyo.ac.jp/people/nakagawa/win/">中川茂樹先生のモジュール</a>を合わせて使うことを推奨する．<br></p>
 <!-- 反対にPythonでWINデータを生成するモジュールはない． -->
 <!-- 現在numpy.arrayの波形データをWINフォーマットに変換するモジュールのベータ版が完成．
 後日配布予定． -->
+<hr>
 <p>WIN data can be read with obspy (<a href="https://docs.obspy.org/%29" target="_blank" rel="noopener">https://docs.obspy.org/)</a>.
 Then you are recommended to use modifying patch by Nakagawa
 because original obspy code has some bugs on reading WIN data.<br>
 <a href="https://www.eri.u-tokyo.ac.jp/people/nakagawa/win/" target="_blank" rel="noopener">https://www.eri.u-tokyo.ac.jp/people/nakagawa/win/</a></p>
+  </div>
+</div>
 
     </div>
 
@@ -1041,62 +1121,9 @@ because original obspy code has some bugs on reading WIN data.<br>
       
       
       
-        
-      
-      <li>
-        <a href="mailto:?subject=WIN%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92Python%E3%81%A7%E4%BD%9C%E3%82%8B&amp;body=https%3A%2F%2Fis-enaga.github.io%2Fnote%2Fwin%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
-          <i class="fas fa-envelope"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      
-      
-      
-      
       <li>
         <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fis-enaga.github.io%2Fnote%2Fwin%2F&amp;title=WIN%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92Python%E3%81%A7%E4%BD%9C%E3%82%8B" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
           <i class="fab fa-linkedin-in"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      
-      
-      
-      
-      <li>
-        <a href="whatsapp://send?text=WIN%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92Python%E3%81%A7%E4%BD%9C%E3%82%8B%20https%3A%2F%2Fis-enaga.github.io%2Fnote%2Fwin%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
-          <i class="fab fa-whatsapp"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      
-      
-      
-      
-      <li>
-        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fis-enaga.github.io%2Fnote%2Fwin%2F&amp;title=WIN%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92Python%E3%81%A7%E4%BD%9C%E3%82%8B" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
-          <i class="fab fa-weibo"></i>
         </a>
       </li>
     
@@ -1152,6 +1179,23 @@ because original obspy code has some bugs on reading WIN data.<br>
     <li>
       <a href="https://twitter.com/winter2enaga" target="_blank" rel="noopener">
         <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/winter2enaga" target="_blank" rel="noopener">
+        <i class="fab fa-x-twitter"></i>
       </a>
     </li>
   

@@ -7,7 +7,7 @@
     <description>ノート</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>ja</language><lastBuildDate>Tue, 20 Feb 2024 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://is-enaga.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://is-enaga.github.io/media/icon_hu77f5ff57258830e6286a001a8437cebf_35124_512x512_fill_lanczos_center_3.png</url>
       <title>ノート</title>
       <link>https://is-enaga.github.io/note/</link>
     </image>
@@ -23,43 +23,119 @@
 ご自身のプログラムにimportやコピーペーストしてご利用ください．
 mkwin関数の引き数にnumpy.arrayとそのサンプリング周波数，データの開始日時を指定すると，numpy.arrayをWINに変換して出力します．
 ご意見・ご感想等ございましたらTwitterまでご連絡ください．&lt;/p&gt;
+&lt;hr&gt;
 &lt;p&gt;A Python module to convert np.array data to WIN format is now uploaded on Github!&lt;br&gt;
 &lt;a href=&#34;https://github.com/is-enaga/winpy/blob/main/mkwin.py&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/is-enaga/winpy/blob/main/mkwin.py&lt;/a&gt;&lt;br&gt;
-Please use the &amp;ldquo;mkwin&amp;rdquo; function by providing its arguments: an np.array containing data, the sampling frequency, and the start time of the data.&lt;/p&gt;
+Please use the &amp;ldquo;mkwin&amp;rdquo; function by providing its arguments: an np.array containing data, the sampling frequency, and the start time of the data.
+If you have any comments, please contact me through X (Twitter).&lt;/p&gt;
 &lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
 &lt;p&gt;正弦波をWINフォーマットに変換した例を以下に示します．&lt;br&gt;
 WINフォーマットは1秒区切りであるため，半端な秒数で開始・終了する場合に欠損部をなんらかの値で埋める必要があります．
 現在はこの欠損部を端のデータ値で埋めるようにしています．
 (描画時のミスでPythonの波形の正負が逆になっていました．すみません．)&lt;/p&gt;
-&lt;figure&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-input-numpy&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Input (numpy)&#34; srcset=&#34;
+               /note/win/output_huec5be45977885118c797c81a5c51be8f_20011_84ce07deceb8340fbbf5c513cd8ef91e.webp 400w,
+               /note/win/output_huec5be45977885118c797c81a5c51be8f_20011_47ee45b3b5d871f023667389c8cfbf52.webp 760w,
+               /note/win/output_huec5be45977885118c797c81a5c51be8f_20011_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://is-enaga.github.io/note/win/output_huec5be45977885118c797c81a5c51be8f_20011_84ce07deceb8340fbbf5c513cd8ef91e.webp&#34;
+               width=&#34;368&#34;
+               height=&#34;217&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Input (numpy)
+    &lt;/figcaption&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-output-win&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Output (WIN)&#34; srcset=&#34;
+               /note/win/win_test_hu0ec487d3653bc97e07360a115be39359_29673_f4d654aeba8b618551b4fc07c80d83ae.webp 400w,
+               /note/win/win_test_hu0ec487d3653bc97e07360a115be39359_29673_43b17f08dc73bf09d5c5a0af9934d9b6.webp 760w,
+               /note/win/win_test_hu0ec487d3653bc97e07360a115be39359_29673_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://is-enaga.github.io/note/win/win_test_hu0ec487d3653bc97e07360a115be39359_29673_f4d654aeba8b618551b4fc07c80d83ae.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;517&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Output (WIN)
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;!-- &lt;figure&gt;
   &lt;figcaption&gt;Python&lt;/figcaption&gt;
   &lt;img src=output.png width=&#34;50%&#34;&gt;
 &lt;/figure&gt;
 &lt;figure&gt;
   &lt;figcaption&gt;WIN&lt;/figcaption&gt;
   &lt;img src=win_test.png width=&#34;50%&#34;&gt;
-&lt;/figure&gt;
+&lt;/figure&gt; --&gt;
 &lt;h1 id=&#34;補足&#34;&gt;補足&lt;/h1&gt;
-&lt;h2 id=&#34;win-system-by-the-university-of-tokyo&#34;&gt;WIN System by The University of Tokyo&lt;/h2&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;h2 id=&#34;win-system-by-the-university-of-tokyo&#34;&gt;WIN System by The University of Tokyo&lt;/h2&gt;
 &lt;p&gt;WINシステムは日本で用いられている地震波形の検測用ソフトおよびその周辺ツール．
 ダウンロードは以下から可能．&lt;br&gt;
 &lt;a href=&#34;https://wwweic.eri.u-tokyo.ac.jp/WIN/pub/win/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://wwweic.eri.u-tokyo.ac.jp/WIN/pub/win/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;WINフォーマットのデータはwintosacやwin2sacでSAC形式に変換可能．
 一方で，他のフォーマットからWINフォーマットに変換するツールはほぼ公開されていないようだ．&lt;br&gt;&lt;/p&gt;
+&lt;hr&gt;
 &lt;p&gt;WIN system consists of a GUI picking tool and other surrounding commands. You can download WIN from:&lt;br&gt;
 &lt;a href=&#34;https://wwweic.eri.u-tokyo.ac.jp/WIN/pub/win/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://wwweic.eri.u-tokyo.ac.jp/WIN/pub/win/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;WIN format data can be converted to SAC with wintosac command or win2sac command.
 On the other hand, tools to obtain WIN data from other formats are not exist.&lt;/p&gt;
-&lt;h2 id=&#34;read-win-format-data-with-python&#34;&gt;Read WIN Format Data with Python&lt;/h2&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;h2 id=&#34;read-win-format-data-with-python&#34;&gt;Read WIN Format Data with Python&lt;/h2&gt;
 &lt;p&gt;WINデータの読み込みは&lt;a href=&#34;https://docs.obspy.org/&#34;&gt;obspy&lt;/a&gt;で可能．
 ただしそのときは，&lt;a href=&#34;https://www.eri.u-tokyo.ac.jp/people/nakagawa/win/&#34;&gt;中川茂樹先生のモジュール&lt;/a&gt;を合わせて使うことを推奨する．&lt;br&gt;&lt;/p&gt;
 &lt;!-- 反対にPythonでWINデータを生成するモジュールはない． --&gt;
 &lt;!-- 現在numpy.arrayの波形データをWINフォーマットに変換するモジュールのベータ版が完成．
 後日配布予定． --&gt;
+&lt;hr&gt;
 &lt;p&gt;WIN data can be read with obspy (&lt;a href=&#34;https://docs.obspy.org/%29&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://docs.obspy.org/)&lt;/a&gt;.
 Then you are recommended to use modifying patch by Nakagawa
 because original obspy code has some bugs on reading WIN data.&lt;br&gt;
 &lt;a href=&#34;https://www.eri.u-tokyo.ac.jp/people/nakagawa/win/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.eri.u-tokyo.ac.jp/people/nakagawa/win/&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 </description>
     </item>
     
