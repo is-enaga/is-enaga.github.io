@@ -19,13 +19,15 @@
       <guid>https://is-enaga.github.io/note/win/</guid>
       <description>&lt;h1 id=&#34;convert-numpy-data-to-win-format&#34;&gt;Convert NumPy Data to WIN Format&lt;/h1&gt;
 &lt;p&gt;numpyのデータをWINフォーマットに書き出すモジュールのベータ版をGitHubに公開しました．&lt;br&gt;
-&lt;a href=&#34;https://github.com/is-enaga/winpy/blob/main/mkwin.py&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/is-enaga/winpy/blob/main/mkwin.py&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://github.com/is-enaga/winpy&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/is-enaga/winpy&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://github.com/is-enaga/winpy/releases/tag/v0.1.0-beta&#34;&gt;こちら&lt;/a&gt;からダウンロード可能です．
 ご自身のプログラムにimportやコピーペーストしてご利用ください．
 mkwin関数の引き数にnumpy.arrayとそのサンプリング周波数，データの開始日時を指定すると，numpy.arrayをWINに変換して出力します．
 ご意見・ご感想等ございましたらTwitterまでご連絡ください．&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;A Python module to convert np.array data to WIN format is now uploaded on Github!&lt;br&gt;
-&lt;a href=&#34;https://github.com/is-enaga/winpy/blob/main/mkwin.py&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/is-enaga/winpy/blob/main/mkwin.py&lt;/a&gt;&lt;br&gt;
+&lt;p&gt;A beta version of Python module for converting np.array data into WIN format is now uploaded on Github!&lt;br&gt;
+&lt;a href=&#34;https://github.com/is-enaga/winpy&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/is-enaga/winpy&lt;/a&gt;&lt;br&gt;
+Download from &lt;a href=&#34;https://github.com/is-enaga/winpy/releases/tag/v0.1.0-beta&#34;&gt;here&lt;/a&gt;
 Please use the &amp;ldquo;mkwin&amp;rdquo; function by providing its arguments: an np.array containing data, the sampling frequency, and the start time of the data.
 If you have any comments, please contact me through X (Twitter).&lt;/p&gt;
 &lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;

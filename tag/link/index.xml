@@ -20,5 +20,29 @@
       <description></description>
     </item>
     
+    <item>
+      <title>SAC マニュアル</title>
+      <link>https://is-enaga.github.io/links/sac_man/</link>
+      <pubDate>Sun, 03 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://is-enaga.github.io/links/sac_man/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TauP マニュアル</title>
+      <link>https://is-enaga.github.io/links/taup_man/</link>
+      <pubDate>Sun, 03 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://is-enaga.github.io/links/taup_man/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Texas大学プレートデータ</title>
+      <link>https://is-enaga.github.io/links/texas_uni/</link>
+      <pubDate>Sun, 03 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://is-enaga.github.io/links/texas_uni/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
