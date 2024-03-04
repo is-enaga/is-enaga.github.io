@@ -35,6 +35,14 @@
     </item>
     
     <item>
+      <title>東京大学地震研究所</title>
+      <link>https://is-enaga.github.io/links/eri/</link>
+      <pubDate>Mon, 04 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://is-enaga.github.io/links/eri/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>プライバシーポリシー　Privacy Policy</title>
       <link>https://is-enaga.github.io/privacy/</link>
       <pubDate>Mon, 04 Mar 2024 00:00:00 +0900</pubDate>
@@ -59,6 +67,19 @@ mkwin関数の引き数にnumpy.arrayとそのサンプリング周波数，デ�
 &lt;p&gt;A Python module to convert np.array data to WIN format is now uploaded on Github!&lt;br&gt;
 &lt;a href=&#34;https://github.com/is-enaga/winpy/blob/main/mkwin.py&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/is-enaga/winpy/blob/main/mkwin.py&lt;/a&gt;&lt;br&gt;
 Please use the &amp;ldquo;mkwin&amp;rdquo; function by providing its arguments: an np.array containing data, the sampling frequency, and the start time of the data.&lt;/p&gt;
+&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
+&lt;p&gt;正弦波をWINフォーマットに変換した例を以下に示します．&lt;br&gt;
+WINフォーマットは1秒区切りであるため，半端な秒数で開始・終了する場合に欠損部をなんらかの値で埋める必要があります．
+現在はこの欠損部を端のデータ値で埋めるようにしています．
+(描画時のミスでPythonの波形の正負が逆になっていました．すみません．)&lt;/p&gt;
+&lt;figure&gt;
+  &lt;figcaption&gt;Python&lt;/figcaption&gt;
+  &lt;img src=output.png width=&#34;50%&#34;&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+  &lt;figcaption&gt;WIN&lt;/figcaption&gt;
+  &lt;img src=win_test.png width=&#34;50%&#34;&gt;
+&lt;/figure&gt;
 &lt;h1 id=&#34;補足&#34;&gt;補足&lt;/h1&gt;
 &lt;h2 id=&#34;win-system-by-the-university-of-tokyo&#34;&gt;WIN System by The University of Tokyo&lt;/h2&gt;
 &lt;p&gt;WINシステムは日本で用いられている地震波形の検測用ソフトおよびその周辺ツール．
@@ -80,17 +101,6 @@ On the other hand, tools to obtain WIN data from other formats are not exist.&lt
 Then you are recommended to use modifying patch by Nakagawa
 because original obspy code has some bugs on reading WIN data.&lt;br&gt;
 &lt;a href=&#34;https://www.eri.u-tokyo.ac.jp/people/nakagawa/win/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.eri.u-tokyo.ac.jp/people/nakagawa/win/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;変換前後の画像は以下のようになる．
-両端のデータの欠損部は端のデータ値で埋めている．
-(描画時のミスでPythonの波形の正負が逆になっていました．すみません．)&lt;/p&gt;
-&lt;figure&gt;
-  &lt;figcaption&gt;Python&lt;/figcaption&gt;
-  &lt;img src=output.png width=&#34;50%&#34;&gt;
-&lt;/figure&gt;
-&lt;figure&gt;
-  &lt;figcaption&gt;WIN&lt;/figcaption&gt;
-  &lt;img src=win_test.png width=&#34;50%&#34;&gt;
-&lt;/figure&gt;
 </description>
     </item>
     
@@ -409,7 +419,7 @@ data.head()
 
 
 
-&lt;div id=&#34;chart-736418259&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-351492687&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -419,7 +429,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-736418259&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-351492687&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();

@@ -318,7 +318,7 @@
 
   
 
-<meta name="description" content="PythonでWINフォーマットを出力するモジュールを作成しました．" />
+<meta name="description" content="PythonでWINフォーマットを出力するモジュールを公開しています" />
 
 
 
@@ -366,7 +366,7 @@
 <meta property="og:site_name" content="日々散策" />
 <meta property="og:url" content="https://is-enaga.github.io/note/win/" />
 <meta property="og:title" content="WINフォーマットファイルをPythonで作る | 日々散策" />
-<meta property="og:description" content="PythonでWINフォーマットを出力するモジュールを作成しました．" /><meta property="og:image" content="https://is-enaga.github.io/note/win/featured.png" /><meta property="og:locale" content="ja" />
+<meta property="og:description" content="PythonでWINフォーマットを出力するモジュールを公開しています" /><meta property="og:image" content="https://is-enaga.github.io/note/win/featured.png" /><meta property="og:locale" content="ja" />
 
   
     <meta
@@ -641,7 +641,44 @@
           
 
           <li class="nav-item">
-            <a class="nav-link " href="/#contact"><span>編集者について</span></a>
+            <a class="nav-link " href="/#contact"><span>連絡先</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#links"><span>リンク</span></a>
           </li>
 
           
@@ -905,6 +942,19 @@ mkwin関数の引き数にnumpy.arrayとそのサンプリング周波数，デ�
 <p>A Python module to convert np.array data to WIN format is now uploaded on Github!<br>
 <a href="https://github.com/is-enaga/winpy/blob/main/mkwin.py" target="_blank" rel="noopener">https://github.com/is-enaga/winpy/blob/main/mkwin.py</a><br>
 Please use the &ldquo;mkwin&rdquo; function by providing its arguments: an np.array containing data, the sampling frequency, and the start time of the data.</p>
+<h2 id="example">Example</h2>
+<p>正弦波をWINフォーマットに変換した例を以下に示します．<br>
+WINフォーマットは1秒区切りであるため，半端な秒数で開始・終了する場合に欠損部をなんらかの値で埋める必要があります．
+現在はこの欠損部を端のデータ値で埋めるようにしています．
+(描画時のミスでPythonの波形の正負が逆になっていました．すみません．)</p>
+<figure>
+  <figcaption>Python</figcaption>
+  <img src=output.png width="50%">
+</figure>
+<figure>
+  <figcaption>WIN</figcaption>
+  <img src=win_test.png width="50%">
+</figure>
 <h1 id="補足">補足</h1>
 <h2 id="win-system-by-the-university-of-tokyo">WIN System by The University of Tokyo</h2>
 <p>WINシステムは日本で用いられている地震波形の検測用ソフトおよびその周辺ツール．
@@ -926,17 +976,6 @@ On the other hand, tools to obtain WIN data from other formats are not exist.</p
 Then you are recommended to use modifying patch by Nakagawa
 because original obspy code has some bugs on reading WIN data.<br>
 <a href="https://www.eri.u-tokyo.ac.jp/people/nakagawa/win/" target="_blank" rel="noopener">https://www.eri.u-tokyo.ac.jp/people/nakagawa/win/</a></p>
-<p>変換前後の画像は以下のようになる．
-両端のデータの欠損部は端のデータ値で埋めている．
-(描画時のミスでPythonの波形の正負が逆になっていました．すみません．)</p>
-<figure>
-  <figcaption>Python</figcaption>
-  <img src=output.png width="50%">
-</figure>
-<figure>
-  <figcaption>WIN</figcaption>
-  <img src=win_test.png width="50%">
-</figure>
 
     </div>
 
