@@ -35,6 +35,61 @@
     </item>
     
     <item>
+      <title>PyGMTの使い方ノート</title>
+      <link>https://is-enaga.github.io/note/pygmt_note/</link>
+      <pubDate>Fri, 22 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://is-enaga.github.io/note/pygmt_note/</guid>
+      <description>&lt;p&gt;「PDF」ボタンからダウンロードしてください．&lt;/p&gt;
+&lt;p&gt;PyGMTの使い方について日本語で記したノートです．
+インストールから最低限のコマンドをはじめ，
+LaTeX形式での数式入力，スプライン曲線の引き方，度分秒による座標指定など，やや細かな点も目的別にまとめています．&lt;/p&gt;
+&lt;p&gt;一例として次の図のような，スプライン曲線に沿った文字配置なども扱っています．
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-スプライン曲線に沿った文字の配置pygmtで作成&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;スプライン曲線に沿った文字の配置．PyGMTで作成．&#34; srcset=&#34;
+               /note/pygmt_note/textalongline_hu553b46be28beb1f7a3b1f1433c0d6217_13059_def25e69b75cf2808eff22076d7c53c3.webp 400w,
+               /note/pygmt_note/textalongline_hu553b46be28beb1f7a3b1f1433c0d6217_13059_a431542a2e8d12de1ca069a4264f5b4e.webp 760w,
+               /note/pygmt_note/textalongline_hu553b46be28beb1f7a3b1f1433c0d6217_13059_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://is-enaga.github.io/note/pygmt_note/textalongline_hu553b46be28beb1f7a3b1f1433c0d6217_13059_def25e69b75cf2808eff22076d7c53c3.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;299&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      スプライン曲線に沿った文字の配置．PyGMTで作成．
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;なお本ノートは私の作業とともに逐次更新しています．&lt;/p&gt;
+&lt;p&gt;個人的な備忘録として作成したため，雑な箇所もありますがご了承ください．&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;個人的PyGMTノート（2024）白岩景．&lt;/p&gt;
+&lt;p&gt;本ノートはクリエイティブ・コモンズ・ライセンスのBY-NC（クレジット表示-非営利）により保護されています．&lt;/p&gt;
+&lt;p&gt;(C) 2024 Kei Shiraiwa. Licensed under CC BY-NC 4.0&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;お問い合わせはX（Twitter）までお願いいたします．&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>東京大学地震研究所</title>
       <link>https://is-enaga.github.io/links/eri/</link>
       <pubDate>Mon, 04 Mar 2024 00:00:00 +0000</pubDate>
@@ -54,6 +109,14 @@
     </item>
     
     <item>
+      <title>WINシステム公式マニュアル</title>
+      <link>https://is-enaga.github.io/links/win_man_ja/</link>
+      <pubDate>Sun, 03 Mar 2024 00:01:00 +0000</pubDate>
+      <guid>https://is-enaga.github.io/links/win_man_ja/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>SAC マニュアル</title>
       <link>https://is-enaga.github.io/links/sac_man/</link>
       <pubDate>Sun, 03 Mar 2024 00:00:00 +0000</pubDate>
@@ -70,9 +133,17 @@
     </item>
     
     <item>
+      <title>JODCデータ提供システム</title>
+      <link>https://is-enaga.github.io/links/jodc/</link>
+      <pubDate>Sat, 02 Mar 2024 00:01:00 +0000</pubDate>
+      <guid>https://is-enaga.github.io/links/jodc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Texas大学プレートデータ</title>
       <link>https://is-enaga.github.io/links/texas_uni/</link>
-      <pubDate>Sun, 03 Mar 2024 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 02 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://is-enaga.github.io/links/texas_uni/</guid>
       <description></description>
     </item>
