@@ -17,7 +17,9 @@
       <link>https://is-enaga.github.io/note/pygmt_note/</link>
       <pubDate>Fri, 22 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://is-enaga.github.io/note/pygmt_note/</guid>
-      <description>&lt;p&gt;「PDF」ボタンからダウンロードしてください．&lt;/p&gt;
+      <description>&lt;!-- 「PDF」ボタンからダウンロードしてください． --&gt;
+&lt;p&gt;「WEB版ノート」ボタン，あるいは以下のリンクからアクセスできます．
+&lt;url&gt;&lt;a href=&#34;https://is-enaga.github.io/mynote/pygmt/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://is-enaga.github.io/mynote/pygmt/&lt;/a&gt;&lt;/url&gt;&lt;/p&gt;
 &lt;p&gt;PyGMTの使い方について日本語で記したノートです．
 インストールから最低限のコマンドをはじめ，
 LaTeX形式での数式入力，スプライン曲線の引き方，度分秒による座標指定など，やや細かな点も目的別にまとめています．&lt;/p&gt;
